@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Ink | Custom Visual Stories by Amy Quinn Digges</title>
+    <meta name="description" content="Custom-designed visual stories capturing your life's most meaningful moments. Handcrafted by Amy Quinn Digges, an artist, writer, and storyteller.">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-text">STORY<em>Ink.</em></span>
+                        <span class="tagline">what's your story?</span>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <button class="menu-toggle" aria-label="Toggle Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-links">
+                        <li><a href="#my-story" class="nav-link">My Story</a></li>
+                        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                        <li><a href="#services" class="nav-link">Services</a></li>
+                        <li><a href="#process" class="nav-link">Process</a></li>
+                        <li><a href="#faq" class="nav-link">FAQ</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                        <li><a href="booking.html" class="nav-link btn btn-primary">Book a Consultation</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Custom Visual Stories <span>Handcrafted with Heart</span></h1>
+                <p class="hero-text">Transform your cherished memories into unique, hand-drawn visual narratives that tell your story in a way words alone never could.</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-lg btn-primary">View Portfolio</a>
+                    <a href="booking.html" class="btn btn-lg btn-outline">Book a Consultation</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg">
+            <div class="hero-image">
+                <!-- This will be a background image in CSS -->
+            </div>
+            <div class="hero-overlay"></div>
+        </div>
+    </section>
+
+    <!-- About / My Story Section -->
+    <section id="my-story" class="section my-story">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Story</h2>
+                <div class="decorative-line"></div>
+            </div>
+            <div class="my-story-content">
+                <div class="my-story-image">
+                    <div class="image-frame">
+                        <!-- Image will be added via CSS -->
+                    </div>
+                </div>
+                <div class="my-story-text">
+                    <p>Hi! I'm Amy! As an artist, writer, blogger, traveler, teacher, and storyteller, I've always been captivated by the power of narrative. Stories shape our perspectives, deepen our empathy, and strengthen our connections. They help us understand where we've been and who we are. As an artist, I wanted to express them in a less traditional way.</p>
+                    
+                    <p>With Story Ink, I set out to capture these personal narratives in a unique, hand-drawn visual form. Each piece is custom-designed to reflect your story—whether it's the story of your life, a cherished friendship, a marriage, a meaningful place, or any experience that deserves to be preserved. Your story is one of a kind. Let's turn it into art.</p>
+                    
+                    <p class="highlight">So...what's your story?</p>
+                    
+                    <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Portfolio</h2>
+                <p class="section-subtitle">Each artwork is hand-drawn with care and precision to reflect the intended story</p>
+                <div class="decorative-line"></div>
+            </div>
+            
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="family">Family</button>
+                <button class="filter-btn" data-filter="love">Love</button>
+                <button class="filter-btn" data-filter="life">Life</button>
+                <button class="filter-btn" data-filter="custom">Custom</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <!-- Portfolio items will be dynamically generated with JavaScript -->
+                <div class="portfolio-item" data-category="love">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/love.jpg" alt="Love - A custom visual story">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Love</h3>
+                                <p>Timmy and Julie have been friends for their entire lives. Their life is filled with stories and inside jokes that no one else can decipher.</p>
+                                <a href="#" class="portfolio-link" data-id="love">View Story</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="family">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/bonney.jpg" alt="Bonney - A family visual story">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Bonney</h3>
+                                <p>This is the collective story of 4 generations of Bonney women: Florence Bonney Cummings, Florence Shirley Bonney, Bonney Anne, and Carrie Bonney.</p>
+                                <a href="#" class="portfolio-link" data-id="bonney">View Story</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="life">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/stress.jpg" alt="Stress - A life story">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Breathe</h3>
+                                <p>After reading "Burnout: The Secret to Unlocking the Stress Cycle" by Emily Nagoski and Amelia Nagoski, it felt important for me to create a visual reminder of self-care.</p>
+                                <a href="#" class="portfolio-link" data-id="stress">View Story</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- More portfolio items will be added here -->
+            </div>
+            
+            <div class="portfolio-cta">
+                <a href="portfolio.html" class="btn btn-secondary">View Full Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Services</h2>
+                <p class="section-subtitle">Custom visual storytelling experiences for life's meaningful moments</p>
+                <div class="decorative-line"></div>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="service-title">Love Stories</h3>
+                    <p class="service-desc">Celebrate your relationship with a visual narrative that captures your unique journey together. Perfect for anniversaries, weddings, or "just because."</p>
+                    <a href="booking.html" class="btn btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="service-title">Family Legacies</h3>
+                    <p class="service-desc">Preserve your family history, traditions, and milestones in a meaningful visual heirloom that can be passed down through generations.</p>
+                    <a href="booking.html" class="btn btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3 class="service-title">Place Stories</h3>
+                    <p class="service-desc">Commemorate a location that holds special meaning—your childhood home, favorite vacation spot, or the setting of a life-changing moment.</p>
+                    <a href="booking.html" class="btn btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="service-title">Custom Creations</h3>
+                    <p class="service-desc">Have something unique in mind? I'll work with you to create a personalized visual story that perfectly captures your vision and narrative.</p>
+                    <a href="booking.html" class="btn btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="section process">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Process</h2>
+                <p class="section-subtitle">From concept to creation: how your story becomes art</p>
+                <div class="decorative-line"></div>
+            </div>
+            
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Consultation</h3>
+                        <p>We'll discuss your story, share ideas, and explore how to best visually represent your narrative. This can be done virtually or in person.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Concept Development</h3>
+                        <p>I'll create preliminary sketches and concept designs based on our consultation, incorporating elements that are meaningful to your story.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Feedback & Refinement</h3>
+                        <p>You'll review the initial concepts and provide feedback. We'll refine the design together until it perfectly captures your vision.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Artistic Creation</h3>
+                        <p>I'll hand-draw your visual story with meticulous attention to detail, ensuring every element represents a piece of your narrative.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Final Delivery</h3>
+                        <p>Your completed visual story is professionally packaged and delivered to you, ready to be displayed and treasured for years to come.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="process-cta">
+                <a href="booking.html" class="btn btn-primary">Book Your Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Client Stories</h2>
+                <p class="section-subtitle">Hear what others are saying about their Story Ink experience</p>
+                <div class="decorative-line"></div>
+            </div>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text">Amy captured the essence of our 30-year journey together in a way that photos never could. Every time I look at our visual story, I discover something new—a memory, a joke, a moment that makes our relationship special.</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Sarah & Michael Thompson</h4>
+                                <p>Love Story Client</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text">I commissioned Amy to create a visual story of my grandmother's life as a gift for her 90th birthday. The entire family was moved to tears—it became an instant family treasure that will be passed down for generations.</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Jessica Martinez</h4>
+                                <p>Family Legacy Client</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text">Working with Amy was an incredible experience from start to finish. She listened intently to my story and somehow translated my words into a visual representation that was more meaningful than I could have imagined.</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>David Chen</h4>
+                                <p>Custom Creation Client</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-nav">
+                <button class="prev-btn" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+                <div class="testimonial-dots">
+                    <button class="dot active" aria-label="Testimonial 1"></button>
+                    <button class="dot" aria-label="Testimonial 2"></button>
+                    <button class="dot" aria-label="Testimonial 3"></button>
+                </div>
+                <button class="next-btn" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="decorative-line"></div>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How is Story Ink priced?</span>
+                        <span class="icon"><i class="fas fa-plus"></i><i class="fas fa-minus"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Story Ink creations are priced based on complexity, size, and time investment. Small pieces start at $300, while more detailed, larger works range from $500-$1,200. After our consultation, I'll provide a detailed quote based on your specific project requirements.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What is the process of creating a visual story?</span>
+                        <span class="icon"><i class="fas fa-plus"></i><i class="fas fa-minus"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The process begins with a consultation where we discuss your story and vision. I then create concept sketches for your review, refine the design based on your feedback, and proceed with the final creation. The entire process typically takes 4-6 weeks, depending on complexity and my current workload.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you ship internationally?</span>
+                        <span class="icon"><i class="fas fa-plus"></i><i class="fas fa-minus"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, I ship worldwide! International shipping costs will be calculated based on your location and included in your quote. All artwork is professionally packaged to ensure it arrives safely.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I request revisions to the design?</span>
+                        <span class="icon"><i class="fas fa-plus"></i><i class="fas fa-minus"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! Your satisfaction is my priority. The process includes a feedback and refinement stage where you can request adjustments to the concept sketches. Two rounds of revisions are included in the base price, with additional revisions available at a small fee.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What information do you need to create my story?</span>
+                        <span class="icon"><i class="fas fa-plus"></i><i class="fas fa-minus"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The more details, the better! Photos, anecdotes, important dates, meaningful objects, inside jokes, favorite places—anything that helps paint a picture of your story. During our consultation, I'll guide you through sharing the elements that will make your visual story rich and personal.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How long does it take to complete a project?</span>
+                        <span class="icon"><i class="fas fa-plus"></i><i class="fas fa-minus"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Most projects take 4-6 weeks from consultation to delivery. Complex projects may take longer. If you need your visual story by a specific date (for a gift or special occasion), please let me know during our initial contact so I can confirm availability.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-cta">
+                <p>Have more questions? I'm happy to help!</p>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-subtitle">Ready to start your Story Ink journey? Let's connect!</p>
+                <div class="decorative-line"></div>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Email</h3>
+                            <p><a href="mailto:amy@storyink.com">amy@storyink.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Phone</h3>
+                            <p><a href="tel:+11234567890">(123) 456-7890</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Office Hours</h3>
+                            <p>Monday - Friday: 9am - 5pm EST<br>Weekends: By appointment</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h3>Follow My Creative Journey</h3>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm" action="#" method="POST">
+                        <div class="form-group half">
+                            <label for="firstName">First Name*</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        
+                        <div class="form-group half">
+                            <label for="lastName">Last Name*</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone (Optional)</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="interestIn">I'm interested in:</label>
+                            <select id="interestIn" name="interestIn">
+                                <option value="">Please select...</option>
+                                <option value="love">Love Story</option>
+                                <option value="family">Family Legacy</option>
+                                <option value="place">Place Story</option>
+                                <option value="custom">Custom Creation</option>
+                                <option value="other">Something Else</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message*</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="newsletter" id="newsletter">
+                                <span class="checkmark"></span>
+                                Subscribe to my newsletter for creative inspiration and updates
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Story Into Art?</h2>
+                <p>Book a consultation today and let's start creating something meaningful together.</p>
+                <a href="booking.html" class="btn btn-lg btn-light">Book Your Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">STORY<em>Ink.</em></span>
+                    <span class="tagline">what's your story?</span>
+                </div>
+                
+                <div class="footer-nav">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#my-story">My Story</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#process">Process</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-services">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#love">Love Stories</a></li>
+                        <li><a href="services.html#family">Family Legacies</a></li>
+                        <li><a href="services.html#place">Place Stories</a></li>
+                        <li><a href="services.html#custom">Custom Creations</a></li>
+                        <li><a href="booking.html">Book a Consultation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="mailto:amy@storyink.com"><i class="fas fa-envelope"></i> amy@storyink.com</a></li>
+                        <li><a href="tel:+11234567890"><i class="fas fa-phone-alt"></i> (123) 456-7890</a></li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Story Ink by Amy Quinn Digges. All rights reserved.</p>
+                <ul class="footer-legal">
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>

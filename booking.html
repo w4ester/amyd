@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Consultation | Story Ink by Amy Quinn Digges</title>
+    <meta name="description" content="Schedule a consultation with Amy Quinn Digges to discuss your custom visual story project and begin your creative journey.">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Flatpickr Calendar -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-text">STORY<em>Ink.</em></span>
+                        <span class="tagline">what's your story?</span>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <button class="menu-toggle" aria-label="Toggle Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-links">
+                        <li><a href="index.html#my-story" class="nav-link">My Story</a></li>
+                        <li><a href="index.html#portfolio" class="nav-link">Portfolio</a></li>
+                        <li><a href="index.html#services" class="nav-link">Services</a></li>
+                        <li><a href="index.html#process" class="nav-link">Process</a></li>
+                        <li><a href="index.html#faq" class="nav-link">FAQ</a></li>
+                        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                        <li><a href="booking.html" class="nav-link btn btn-primary">Book a Consultation</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <div class="banner-content">
+                <h1 class="page-title">Book Your Consultation</h1>
+                <p class="page-subtitle">Let's discuss your story and start creating something meaningful together</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="section booking">
+        <div class="container">
+            <div class="booking-content">
+                <div class="booking-intro">
+                    <h2>Start Your Story Ink Journey</h2>
+                    <p>The consultation is an important first step in creating your custom visual story. During our session, we'll discuss your vision, explore creative possibilities, and determine how to best capture your narrative through art.</p>
+                    
+                    <div class="booking-details">
+                        <div class="detail-item">
+                            <div class="detail-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="detail-info">
+                                <h3>Duration</h3>
+                                <p>60 minutes</p>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <div class="detail-icon">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <div class="detail-info">
+                                <h3>Format</h3>
+                                <p>Virtual (Zoom) or In-person</p>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <div class="detail-icon">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <div class="detail-info">
+                                <h3>Fee</h3>
+                                <p>$75 (applied to your project if you proceed)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="booking-form-container">
+                    <h2>Select a Consultation Date & Time</h2>
+                    
+                    <div class="booking-calendar">
+                        <div class="calendar-container">
+                            <div id="datepicker"></div>
+                        </div>
+                        
+                        <div class="time-slots-container">
+                            <h3>Available Time Slots</h3>
+                            <p>Please select a date to view available times.</p>
+                            
+                            <div class="time-slots" id="timeSlots">
+                                <!-- Time slots will be dynamically populated -->
+                                <div class="time-slot" data-time="10:00 AM">10:00 AM</div>
+                                <div class="time-slot" data-time="11:00 AM">11:00 AM</div>
+                                <div class="time-slot unavailable" data-time="12:00 PM">12:00 PM</div>
+                                <div class="time-slot" data-time="1:00 PM">1:00 PM</div>
+                                <div class="time-slot" data-time="2:00 PM">2:00 PM</div>
+                                <div class="time-slot unavailable" data-time="3:00 PM">3:00 PM</div>
+                                <div class="time-slot" data-time="4:00 PM">4:00 PM</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form id="bookingForm" class="booking-form">
+                        <input type="hidden" id="selectedDate" name="selectedDate">
+                        <input type="hidden" id="selectedTimeSlot" name="selectedTimeSlot">
+                        
+                        <div class="form-header">
+                            <h3>Your Information</h3>
+                        </div>
+                        
+                        <div class="form-group half">
+                            <label for="firstName">First Name*</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        
+                        <div class="form-group half">
+                            <label for="lastName">Last Name*</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone*</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="consultationType">Consultation Format*</label>
+                            <select id="consultationType" name="consultationType" required>
+                                <option value="">Select Format</option>
+                                <option value="virtual">Virtual (Zoom)</option>
+                                <option value="inperson">In-Person</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="projectType">What type of project are you interested in?*</label>
+                            <select id="projectType" name="projectType" required>
+                                <option value="">Select Project Type</option>
+                                <option value="love">Love Story</option>
+                                <option value="family">Family Legacy</option>
+                                <option value="place">Place Story</option>
+                                <option value="custom">Custom Creation</option>
+                                <option value="unsure">Not Sure Yet</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="additionalInfo">Tell me a bit about your story or project idea</label>
+                            <textarea id="additionalInfo" name="additionalInfo" rows="4"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="howHeard">How did you hear about Story Ink?</label>
+                            <select id="howHeard" name="howHeard">
+                                <option value="">Select an option</option>
+                                <option value="referral">Friend or Family Referral</option>
+                                <option value="social">Social Media</option>
+                                <option value="search">Google Search</option>
+                                <option value="event">Event or Exhibition</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="newsletter" id="newsletter">
+                                <span class="checkmark"></span>
+                                Subscribe to my newsletter for creative inspiration and updates
+                            </label>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <h3>Secure Your Consultation</h3>
+                            <p>A $75 consultation fee is required to reserve your time slot. This fee will be applied as credit toward your project if you decide to move forward.</p>
+                            
+                            <button type="submit" class="btn btn-primary btn-full">Proceed to Payment</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What to Expect Section -->
+    <section class="section expect-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What to Expect</h2>
+                <div class="decorative-line"></div>
+            </div>
+            
+            <div class="expect-grid">
+                <div class="expect-item">
+                    <div class="expect-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Meaningful Conversation</h3>
+                    <p>We'll discuss your story, experiences, and what elements are most important to capture in your visual narrative.</p>
+                </div>
+                
+                <div class="expect-item">
+                    <div class="expect-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Creative Brainstorming</h3>
+                    <p>Together, we'll explore artistic concepts, visual themes, and possible approaches to representing your story.</p>
+                </div>
+                
+                <div class="expect-item">
+                    <div class="expect-icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3>Project Planning</h3>
+                    <p>We'll discuss timeline, investment, and create a roadmap for how your project will unfold from concept to completion.</p>
+                </div>
+                
+                <div class="expect-item">
+                    <div class="expect-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3>Q&A Time</h3>
+                    <p>Bring your questions! This is your opportunity to learn more about the process and ensure Story Ink is the right fit for your vision.</p>
+                </div>
+            </div>
+            
+            <div class="expect-cta">
+                <p>After our consultation, you'll receive a follow-up email with a summary of our discussion and a personalized project proposal.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Client Experiences</h2>
+                <p class="section-subtitle">Hear from others who started their Story Ink journey with a consultation</p>
+                <div class="decorative-line"></div>
+            </div>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text">I wasn't sure what to expect from our consultation, but Amy made me feel so comfortable sharing my family's story. Her excitement and vision for how to capture our multi-generational narrative was infectious—I left the meeting inspired and confident in my decision.</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Rebecca Wilson</h4>
+                                <p>Family Legacy Client</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text">The consultation was incredibly valuable. Amy asked thoughtful questions that helped me articulate what I really wanted to capture about my journey through grad school. She transformed my jumbled thoughts into a clear artistic vision that exceeded my expectations.</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Marcus Johnson</h4>
+                                <p>Life Story Client</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text">I was nervous about commissioning something so personal, but Amy's warm approach during our consultation put me at ease. She has this amazing ability to listen deeply and translate feelings into visual concepts. The consultation alone was worth every penny.</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Sophia Rodriguez</h4>
+                                <p>Love Story Client</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-nav">
+                <button class="prev-btn" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+                <div class="testimonial-dots">
+                    <button class="dot active" aria-label="Testimonial 1"></button>
+                    <button class="dot" aria-label="Testimonial 2"></button>
+                    <button class="dot" aria-label="Testimonial 3"></button>
+                </div>
+                <button class="next-btn" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">STORY<em>Ink.</em></span>
+                    <span class="tagline">what's your story?</span>
+                </div>
+                
+                <div class="footer-nav">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html#my-story">My Story</a></li>
+                        <li><a href="index.html#portfolio">Portfolio</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#process">Process</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-services">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#love">Love Stories</a></li>
+                        <li><a href="services.html#family">Family Legacies</a></li>
+                        <li><a href="services.html#place">Place Stories</a></li>
+                        <li><a href="services.html#custom">Custom Creations</a></li>
+                        <li><a href="booking.html">Book a Consultation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="mailto:amy@storyink.com"><i class="fas fa-envelope"></i> amy@storyink.com</a></li>
+                        <li><a href="tel:+11234567890"><i class="fas fa-phone-alt"></i> (123) 456-7890</a></li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Story Ink by Amy Quinn Digges. All rights reserved.</p>
+                <ul class="footer-legal">
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="js/scripts.js"></script>
+    <script>
+        // Initialize the date picker
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize Flatpickr calendar
+            const datePicker = flatpickr("#datepicker", {
+                inline: true,
+                minDate: "today",
+                dateFormat: "Y-m-d",
+                disable: [
+                    // Disabled dates would come from a server in a real implementation
+                    "2025-05-10", "2025-05-11", "2025-05-15"
+                ],
+                onChange: function(selectedDates, dateStr) {
+                    document.getElementById('selectedDate').value = dateStr;
+                    
+                    // In a real implementation, this would fetch available time slots from a server
+                    console.log("Selected date:", dateStr);
+                    
+                    // For demo purposes, we'll just show the static time slots
+                    const timeSlotsContainer = document.getElementById('timeSlots');
+                    timeSlotsContainer.style.opacity = '0';
+                    
+                    setTimeout(() => {
+                        // In a real implementation, we would update the time slots based on the selected date
+                        // For now, we're just animating them to simulate the update
+                        timeSlotsContainer.style.opacity = '1';
+                    }, 300);
+                }
+            });
+            
+            // Initialize booking functionality
+            if (typeof initBookingCalendar === 'function') {
+                initBookingCalendar();
+            }
+        });
+    </script>
+</body>
+</html>
