@@ -189,13 +189,13 @@ ul {
 }
 
 .btn-outline {
-    background-color: transparent;
+    background-color: var(--primary-color);
     border: 2px solid var(--primary-color);
-    color: var(--primary-color);
+    color: var(--light-color);
 }
 
 .btn-outline:hover {
-    background-color: var(--primary-color);
+    background-color: var(--primary-dark);
     color: var(--light-color);
 }
 
@@ -316,6 +316,19 @@ ul {
     width: 100%;
 }
 
+/* Style for navigation button */
+.nav-link.btn {
+    color: var(--light-color);
+}
+
+.nav-link.btn:hover {
+    color: var(--light-color);
+}
+
+.nav-link.btn:after {
+    display: none;
+}
+
 .menu-toggle {
     display: none;
     background: none;
@@ -371,10 +384,16 @@ ul {
 .hero-image {
     width: 100%;
     height: 100%;
-    background-image: url('../images/hero-bg.jpg');
+    background-image: linear-gradient(135deg, #6A1B9A, #9C4DCC);
     background-size: cover;
     background-position: center;
-    filter: brightness(0.8);
+    filter: brightness(0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.1);
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 .hero-overlay {
@@ -440,16 +459,23 @@ ul {
 }
 
 .image-frame::before {
-    content: '';
+    content: 'Profile Photo Placeholder';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../images/amy-profile.jpg');
+    background-image: linear-gradient(45deg, #FF9800, #FFC947);
     background-size: cover;
     background-position: center;
     transition: transform 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.8rem;
+    padding: 2rem;
 }
 
 .image-frame:hover::before {
@@ -531,7 +557,24 @@ ul {
     transition: transform 0.5s ease;
 }
 
-.portfolio-item:hover .portfolio-image img {
+.placeholder-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.portfolio-item:hover .portfolio-image img,
+.portfolio-item:hover .placeholder-image {
     transform: scale(1.05);
 }
 
